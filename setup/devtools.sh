@@ -9,6 +9,7 @@ brew install hub
 brew install jq
 brew install htop
 brew install fzf
+/usr/local/opt/fzf/install
 brew cask install docker
 
 # install nvm and latest node
