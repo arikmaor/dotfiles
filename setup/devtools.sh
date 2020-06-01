@@ -2,6 +2,13 @@
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 nvm install --lts
 
+# install fonts for iterm
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+
 # install iterm
 ITERM_SYNC_DIR="${HOME}/.dotfiles/iterm"
 brew cask install iterm2
