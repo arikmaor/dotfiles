@@ -10,8 +10,8 @@ brew install jq
 brew install htop
 brew install fzf
 /usr/local/opt/fzf/install
+brew install pyenv
 brew cask install docker
 
 # install nvm and latest node
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-nvm install --lts

@@ -20,4 +20,8 @@ export NVM_DIR="$HOME/.nvm"
 
 eval "$(direnv hook zsh)"
 
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
 alias git=hub
