@@ -1,0 +1,13 @@
+# [user]
+# 	name = Arik Maor
+# 	email = arikmaor@gmail.com
+[include]
+	path = ~/.dotfiles/.gitconfig.local
+[core]
+	excludesfile = ~/.dotfiles/.gitignore
+[push]
+	default = simple
+[rebase]
+	autosquash = true
+[advice]
+	detachedhead = false
