@@ -1,3 +1,17 @@
+# install fonts for iterm
+echo "Installing fonts for iterm"
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+
+# install iterm
+ITERM_SYNC_DIR="${HOME}/.dotfiles/iterm"
+brew cask install iterm2
+defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool TRUE
+defaults write com.googlecode.iterm2 PrefsCustomFolder $ITERM_SYNC_DIR
+
 brew cask install google-chrome
 brew cask install dropbox
 brew cask install google-drive
