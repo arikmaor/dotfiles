@@ -9,6 +9,8 @@ antigen bundles <<EOBUNDLES
   git
   z
   osx
+  zsh-users/zsh-syntax-highlighting
+  docker
 EOBUNDLES
 
 antigen apply
