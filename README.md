@@ -3,7 +3,7 @@
 ## New machine setup
 1. Install command line developer tools: `xcode-select --install`.
 2. Install homebrew: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`.
-3. Clone this repo: `git clone https://github.com/arikmaor/dotfiles.git ~/.dotfiles`.
+3. Clone this repo: `git clone git@github.com:arikmaor/dotfiles.git ~/.dotfiles`.
 4. Install applications: `~/.dotfiles/setup/apps.sh`.
 5. Install developer tools: `~/.dotfiles/setup/devtools.sh`.
 6. Create symlinks: `~/.dotfiles/setup/symlinks.sh`.
