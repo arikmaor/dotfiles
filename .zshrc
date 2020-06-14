@@ -1,6 +1,6 @@
 source /usr/local/share/antigen/antigen.zsh
 
-export DEFAULT_USER=arik # for anoster theme
+export DEFAULT_USER=arik # for agnoster theme
 
 antigen use oh-my-zsh
 antigen theme agnoster
