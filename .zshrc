@@ -1,20 +1,3 @@
-source /usr/local/share/antigen/antigen.zsh
-
-export DEFAULT_USER=arik # for agnoster theme
-
-antigen use oh-my-zsh
-antigen theme agnoster
-
-antigen bundles <<EOBUNDLES
-  git
-  z
-  osx
-  zsh-users/zsh-syntax-highlighting
-  docker
-EOBUNDLES
-
-antigen apply
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export NVM_DIR="$HOME/.nvm"
@@ -30,5 +13,22 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 eval "$(direnv hook zsh)"
+
+source /usr/local/share/antigen/antigen.zsh
+export DEFAULT_USER=arik # for agnoster theme
+
+antigen use oh-my-zsh
+antigen theme agnoster
+
+antigen bundles <<EOBUNDLES
+  git
+  z
+  osx
+  zsh-users/zsh-syntax-highlighting
+  docker
+  terraform
+EOBUNDLES
+
+antigen apply
 
 alias git=hub
