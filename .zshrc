@@ -32,3 +32,5 @@ antigen apply
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 alias git=hub
+alias vim=nvim
+

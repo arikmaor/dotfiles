@@ -9,6 +9,7 @@ brew install hub
 brew install jq
 brew install htop
 brew install fzf
+brew install neovim
 /usr/local/opt/fzf/install
 brew install pyenv
 brew cask install docker
