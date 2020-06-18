@@ -16,12 +16,16 @@ profiling = {
       print(`Setting profiling level back to ${lastProfilingLevel}.`);
       db.setProfilingLevel(2);
     }
-    db.system.profile.find({
+    this.result = db.system.profile.find({
       op: 'query',
       ts: {
         $gt: profilingStartTs,
         $lte: ISODate()
       }
-    }).forEach(printjson);
+    }).toArray();
+    
+    this.result.forEach(printjson);
   },
+  
+  result: [],
 }
