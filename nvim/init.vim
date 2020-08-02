@@ -43,4 +43,5 @@ let mapleader=","
 
 " nerdtree hotkey
 nmap <Leader>b :NERDTreeFind<CR>
+nmap <C-b> :NERDTreeToggle<CR>
 
