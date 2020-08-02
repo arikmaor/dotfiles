@@ -13,6 +13,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 " comment out code
 Plug 'tpope/vim-commentary'
 
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 call plug#end()
 
 colorscheme gruvbox
