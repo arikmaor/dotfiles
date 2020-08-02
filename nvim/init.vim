@@ -16,4 +16,6 @@ set relativenumber
 
 " nerdtree hotkey
 nmap <C-b> :NERDTreeToggle %<CR>
+" close nerdtree on file open
+let NERDTreeQuitOnOpen = 1
 
