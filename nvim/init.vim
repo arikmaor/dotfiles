@@ -33,15 +33,19 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " mouse control in normal mode
 set mouse=n
 
+let mapleader=","
+
+" nerdtree hotkey
+nmap <Leader>b :NERDTreeFind<CR>
+nmap <C-b> :NERDTreeToggle<CR>
+
 " easier split nav
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-let mapleader=","
-
-" nerdtree hotkey
-nmap <Leader>b :NERDTreeFind<CR>
-nmap <C-b> :NERDTreeToggle<CR>
+" tab navigation
+nnoremap <C-[> :tabp<CR>
+nnoremap <C-]> :tabn<CR>
 
