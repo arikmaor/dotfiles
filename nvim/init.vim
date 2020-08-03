@@ -2,6 +2,9 @@ call plug#begin('~/.config/nvim/plugged')
 
 " theme
 Plug 'morhetz/gruvbox'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
 
 " nerdtree file tree
 Plug 'scrooloose/nerdtree'
@@ -29,6 +32,8 @@ colorscheme gruvbox
 set wildignore+=*/dist/*,*/node_modules/*
 set number
 set relativenumber
+
+let g:airline_powerline_fonts = 1
 
 " close nerdtree on file open
 let NERDTreeQuitOnOpen = 1
