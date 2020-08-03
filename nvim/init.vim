@@ -13,6 +13,13 @@ Plug 'ctrlpvim/ctrlp.vim'
 " comment out code
 Plug 'tpope/vim-commentary'
 
+" syntax highlighting
+Plug 'HerringtonDarkholme/yats.vim'
+
+" git integration
+Plug 'airblade/vim-gitgutter'
+
+" auto completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
@@ -31,6 +38,9 @@ let NERDTreeMinimalUI = 1
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 
 " mouse control in normal mode
 set mouse=n
