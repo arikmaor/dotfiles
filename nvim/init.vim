@@ -11,7 +11,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " fzf
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 
 " comment out code
 Plug 'tpope/vim-commentary'
@@ -54,7 +55,10 @@ let mapleader=","
 
 " nerdtree hotkey
 nmap <Leader>b :NERDTreeFind<CR>
-nmap <C-b> :NERDTreeToggle<CR>
+nmap <Leader>v :NERDTreeToggle<CR>
+
+" fzf
+map <Leader>w :Files<CR>
 
 " easier split nav
 nnoremap <C-J> <C-W><C-J>
