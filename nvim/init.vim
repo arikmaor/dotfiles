@@ -23,6 +23,9 @@ Plug 'HerringtonDarkholme/yats.vim'
 " git integration
 Plug 'airblade/vim-gitgutter'
 
+" terraform integration
+Plug 'hashivim/vim-terraform'
+
 " auto completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
