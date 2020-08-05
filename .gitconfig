@@ -5,6 +5,7 @@
 	path = ~/.dotfiles/.gitconfig.local
 [core]
 	excludesfile = ~/.dotfiles/.gitignore
+	editor = nvim
 [push]
 	default = simple
 [rebase]
