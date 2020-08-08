@@ -27,7 +27,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'hashivim/vim-terraform'
 
 " auto completion
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'for': 'typescript'}
 
 call plug#end()
 
@@ -48,8 +48,9 @@ let NERDTreeMinimalUI = 1
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
-autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+" autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+" autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+autocmd Filetype typescript runtime coc.vim
 
 " mouse control in normal mode
 set mouse=n
@@ -73,4 +74,3 @@ nnoremap <C-H> <C-W><C-H>
 nnoremap <C-[> :tabp<CR>
 nnoremap <C-]> :tabn<CR>
 
-runtime coc.vim
