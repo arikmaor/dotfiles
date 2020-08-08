@@ -27,7 +27,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'hashivim/vim-terraform'
 
 " auto completion
-Plug 'neoclide/coc.nvim', {'branch': 'release', 'for': 'typescript'}
+Plug 'neoclide/coc.nvim', {'branch': 'release' }
 
 call plug#end()
 
@@ -50,7 +50,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 " autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
-autocmd Filetype typescript runtime coc.vim
+runtime coc.vim
 
 " mouse control in normal mode
 set mouse=n

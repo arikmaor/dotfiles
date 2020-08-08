@@ -6,6 +6,7 @@ source "$GOOGLE_CLOUD_SDK_DIR/path.zsh.inc"
 source "$GOOGLE_CLOUD_SDK_DIR/completion.zsh.inc"
 source <(kubectl completion zsh)
 
+export PYTHON_CONFIGURE_OPTS="--enable-framework"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
