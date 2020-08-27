@@ -18,6 +18,7 @@ brew cask install google-drive
 brew cask install java
 brew cask install the-unarchiver
 brew cask install whatsapp
+brew cask install karabiner-elements
 brew cask install vlc
 brew cask install appcleaner
 brew cask install slack
