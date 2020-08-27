@@ -9,6 +9,7 @@ Plug 'tpope/vim-fugitive'
 " nerdtree file tree
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'MarSoft/nerdtree-grep-plugin'
 
 " fzf
 Plug 'junegunn/fzf'
