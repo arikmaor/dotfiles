@@ -13,6 +13,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'MarSoft/nerdtree-grep-plugin'
 
+" editorconfig
+Plug 'editorconfig/editorconfig-vim'
+
 " fzf
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
