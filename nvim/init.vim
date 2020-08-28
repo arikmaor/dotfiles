@@ -38,6 +38,9 @@ Plug 'hashivim/vim-terraform'
 " auto completion
 Plug 'neoclide/coc.nvim', {'branch': 'release' }
 
+" show blame inline
+Plug 'APZelos/blamer.nvim'
+
 " text objects
 Plug 'vim-scripts/argtextobj.vim'
 Plug 'michaeljsmith/vim-indent-object'
@@ -52,6 +55,8 @@ set wildignore+=*/dist/*,*/node_modules/*
 set number
 set relativenumber
 
+" enable blamer plugin
+let g:blamer_enabled = 1
 
 let g:airline_powerline_fonts = 1
 
@@ -60,6 +65,8 @@ let NERDTreeQuitOnOpen = 1
 
 " make nerdtree prettier
 let NERDTreeMinimalUI = 1
+
+let NERDTreeIgnore = ['dist', 'node_modules', '.git']
 
 " Read ~/.NERDTreeBookmarks file and takes its second column
 function! s:nerdtreeBookmarks()
