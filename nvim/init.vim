@@ -16,6 +16,9 @@ Plug 'MarSoft/nerdtree-grep-plugin'
 " editorconfig
 Plug 'editorconfig/editorconfig-vim'
 
+" auto complete brackets
+Plug 'jiangmiao/auto-pairs'
+
 " fzf
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
