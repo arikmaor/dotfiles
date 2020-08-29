@@ -114,6 +114,10 @@ runtime coc.vim
 " mouse control in normal mode
 set mouse=n
 
+" autoload changed files
+set autoread
+au FocusGained,BufEnter * checktime
+
 let mapleader=","
 
 " nerdtree hotkey
