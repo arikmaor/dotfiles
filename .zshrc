@@ -16,6 +16,8 @@ eval "$(direnv hook zsh)"
 source /usr/local/share/antigen/antigen.zsh
 export DEFAULT_USER=arik # for agnoster theme
 
+export KUBE_EDITOR=nvim
+
 antigen use oh-my-zsh
 antigen theme agnoster
 
