@@ -45,6 +45,7 @@ Plug 'APZelos/blamer.nvim'
 Plug 'vim-scripts/argtextobj.vim'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 
 call plug#end()
 
