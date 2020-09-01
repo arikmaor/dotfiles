@@ -38,4 +38,8 @@ RPROMPT=$'%{$fg[white]%}$(tf_prompt_info)%{$reset_color%}'
 
 alias git=hub
 alias vim=nvim
+alias t=terraform
+alias k=kubectl
+alias kctx=kubectx
+alias kns=kubens
 
