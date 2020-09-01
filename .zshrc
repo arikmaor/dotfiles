@@ -32,6 +32,8 @@ EOBUNDLES
 
 antigen apply
 
+RPROMPT=$'%{$fg[white]%}$(tf_prompt_info)%{$reset_color%}'
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 alias git=hub
