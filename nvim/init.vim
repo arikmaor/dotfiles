@@ -46,6 +46,7 @@ Plug 'Yggdroot/indentLine'
 
 " text objects
 Plug 'vim-scripts/argtextobj.vim'
+Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
