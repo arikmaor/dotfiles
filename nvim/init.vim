@@ -72,7 +72,7 @@ let NERDTreeQuitOnOpen = 1
 " make nerdtree prettier
 let NERDTreeMinimalUI = 1
 
-let NERDTreeIgnore = ['dist', 'node_modules', '.git']
+let NERDTreeIgnore = ['dist', 'node_modules', '.git', '__pycache__']
 
 " Read ~/.NERDTreeBookmarks file and takes its second column
 function! s:nerdtreeBookmarks()
