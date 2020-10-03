@@ -11,7 +11,6 @@ Plug 'mhinz/vim-startify'
 " nerdtree file tree
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'MarSoft/nerdtree-grep-plugin'
 
 " editorconfig
 Plug 'editorconfig/editorconfig-vim'
@@ -55,7 +54,7 @@ call plug#end()
 
 colorscheme gruvbox
 
-" set clipboard=unnamed
+let mapleader=","
 
 set wildignore+=*/dist/*,*/node_modules/*
 set number
@@ -124,8 +123,6 @@ set mouse=n
 set autoread
 au FocusGained,BufEnter * checktime
 
-let mapleader=","
-
 " nerdtree hotkey
 nmap <Leader>b :NERDTreeFind<CR>
 nmap <Leader>v :NERDTreeToggle<CR>
@@ -148,5 +145,3 @@ nnoremap <C-]> :tabn<CR>
 " easier clipboard
 noremap <Leader>y "*y
 noremap <Leader>p "*p
-noremap <Leader>Y "+y
-noremap <Leader>P "+p
