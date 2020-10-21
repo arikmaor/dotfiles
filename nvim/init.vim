@@ -130,7 +130,7 @@ nmap <Leader>v :NERDTreeToggle<CR>
 " fzf
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 map <Leader>o :Files<CR>
-map <Leader>f :Ag<CR>
+map <Leader>f :Ag<space>
 
 " easier split nav
 nnoremap <C-J> <C-W><C-J>
