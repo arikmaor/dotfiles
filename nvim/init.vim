@@ -41,7 +41,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release' }
 Plug 'APZelos/blamer.nvim'
 
 " indentation markers
-Plug 'Yggdroot/indentLine'
+" Plug 'Yggdroot/indentLine'
 
 " text objects
 Plug 'vim-scripts/argtextobj.vim'
