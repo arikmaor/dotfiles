@@ -27,6 +27,7 @@ Plug 'tpope/vim-commentary'
 
 " syntax highlighting
 Plug 'HerringtonDarkholme/yats.vim'
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 
 " git integration
 Plug 'airblade/vim-gitgutter'
