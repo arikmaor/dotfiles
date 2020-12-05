@@ -46,3 +46,6 @@ alias k=kubectl
 alias kctx=kubectx
 alias kns=kubens
 
+gctx() {
+  gcloud config set project $(gcloud projects list --format=json | jq -r  '.[].projectId' | fzf)
+}
