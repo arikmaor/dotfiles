@@ -148,3 +148,8 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
+" Allow scrolling documentation
+inoremap <silent><expr> <c-j> coc#float#has_float() ? coc#float#scroll(1) : "\<c-j>"
+inoremap <silent><expr> <c-k> coc#float#has_float() ? coc#float#scroll(0) : "\<c-k>"
+vnoremap <silent><expr> <c-j> coc#float#has_float() ? coc#float#scroll(1) : "\<c-j>"
+vnoremap <silent><expr> <c-k> coc#float#has_float() ? coc#float#scroll(0) : "\<c-k>"
