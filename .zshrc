@@ -46,6 +46,8 @@ alias k=kubectl
 alias kctx=kubectx
 alias kns=kubens
 
+alias argo='argo --context gke_tensorleap-ops3_us-central1-c_ops-cluster -n argo'
+
 gctx() {
   gcloud config set project $(gcloud projects list --format=json | jq -r  '.[].projectId' | fzf)
 }
