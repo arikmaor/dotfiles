@@ -48,6 +48,9 @@ alias kns=kubens
 
 alias argo='argo --context gke_tensorleap-ops3_us-central1-c_ops-cluster -n argo'
 
+alias al='argo list --context gke_tensorleap-ops3_us-central1-c_ops-cluster | tail -n +2 | fzf --preview='\''echo {} | cut -f 1 -d " " | xargs argo watch --context gke_tensorleap-ops3_us-central1-c_ops-cluster '\'' | cut -f 1 -d " " | xargs argo logs --context gke_tensorleap-ops3_us-central1-c_ops-cluster -f '
+alias alr='argo list --running --context gke_tensorleap-ops3_us-central1-c_ops-cluster | tail -n +2 | fzf --preview='\''echo {} | cut -f 1 -d " " | xargs argo watch --context gke_tensorleap-ops3_us-central1-c_ops-cluster '\'' | cut -f 1 -d " " | xargs argo logs --context gke_tensorleap-ops3_us-central1-c_ops-cluster -f '
+
 gctx() {
   gcloud config set project $(gcloud projects list --format=json | jq -r  '.[].projectId' | fzf)
 }
