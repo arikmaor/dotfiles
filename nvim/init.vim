@@ -55,7 +55,7 @@ call plug#end()
 
 colorscheme gruvbox
 
-let mapleader=","
+let mapleader=" "
 
 set wildignore+=*/dist/*,*/node_modules/*
 set number
