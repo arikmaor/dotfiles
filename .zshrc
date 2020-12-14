@@ -71,6 +71,6 @@ f3() {
   elif [[ "$gcs_path" =~ '^.*/$' ]]; then
     f3 $gcs_path
   elif [[ "$gcs_path" != '' ]]; then
-    gsutil cp $gcs_path -
+    echo $gcs_path
   fi
 }
