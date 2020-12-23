@@ -74,3 +74,28 @@ f3() {
     echo $gcs_path
   fi
 }
+
+gfix() {
+  rev=$1
+
+  if [[ -z $rev ]]; then
+    rev=$(git log --oneline | fzf --reverse --height=10 | cut -d ' ' -f 1)
+  fi
+
+  if [[ -z $rev ]]; then
+    return 0
+  fi
+
+  git commit --fixup $rev
+
+  CHANGED=$(git diff-index --name-only HEAD --)
+  if [[ -n $CHANGED ]]; then
+    git stash push
+  fi
+
+  git rebase --autostash -i $rev^
+
+  if [[ -n $CHANGED ]]; then
+    git stash pop
+  fi
+}
