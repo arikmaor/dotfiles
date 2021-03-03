@@ -1,4 +1,4 @@
 {
   "eslint.autoFixOnSave": true,
-  "coc.preferences.formatOnSaveFiletypes": ["markdown", "yaml", "python", "python3"]
+  "coc.preferences.formatOnSaveFiletypes": ["markdown", "yaml", "typescript", "javascript"]
 }
