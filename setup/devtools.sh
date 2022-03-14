@@ -19,3 +19,4 @@ brew install pyenv
 brew install --cask docker
 brew install --cask google-cloud-sdk
 brew install nvm
+brew install tfenv
