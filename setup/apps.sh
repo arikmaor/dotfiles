@@ -8,19 +8,19 @@ rm -rf fonts
 
 # install iterm
 ITERM_SYNC_DIR="${HOME}/.dotfiles/iterm"
-brew cask install iterm2
+brew install --cask iterm2
 defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool TRUE
 defaults write com.googlecode.iterm2 PrefsCustomFolder $ITERM_SYNC_DIR
 
-brew cask install google-chrome
-brew cask install dropbox
-brew cask install google-drive
-brew cask install java
-brew cask install the-unarchiver
-brew cask install whatsapp
-brew cask install karabiner-elements
-brew cask install vlc
-brew cask install appcleaner
-brew cask install slack
-brew cask install visual-studio-code
-brew cask install zoomus
+brew install --cask google-chrome
+brew install --cask dropbox
+brew install --cask google-drive
+brew install --cask java
+brew install --cask the-unarchiver
+brew install --cask whatsapp
+brew install --cask karabiner-elements
+brew install --cask vlc
+brew install --cask appcleaner
+brew install --cask slack
+brew install --cask visual-studio-code
+brew install --cask zoomus
