@@ -39,7 +39,8 @@ RPROMPT=$'%{$fg[white]%}$(tf_prompt_info)%{$reset_color%}'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-[ -f ~/projects/leatherman/source-me.sh ] && ~/projects/leatherman/source-me.sh
+[ -f ~/projects/leatherman/source-me.sh ] && source ~/projects/leatherman/source-me.sh
+
 
 alias git=hub
 alias vim=nvim
