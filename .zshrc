@@ -1,9 +1,9 @@
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-GOOGLE_CLOUD_SDK_DIR="/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk"
-source "$GOOGLE_CLOUD_SDK_DIR/path.zsh.inc"
-source "$GOOGLE_CLOUD_SDK_DIR/completion.zsh.inc"
+source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 source <(kubectl completion zsh)
 
 export PYTHON_CONFIGURE_OPTS="--enable-framework"
@@ -13,7 +13,7 @@ fi
 
 eval "$(direnv hook zsh)"
 
-source /usr/local/share/antigen/antigen.zsh
+source /opt/homebrew/share/antigen/antigen.zsh
 export DEFAULT_USER=arik # for agnoster theme
 
 export EDITOR=nvim
@@ -25,7 +25,7 @@ antigen theme agnoster
 antigen bundles <<EOBUNDLES
   git
   z
-  osx
+  macos
   zsh-users/zsh-syntax-highlighting
   docker
   terraform
