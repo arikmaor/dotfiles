@@ -20,3 +20,4 @@ brew install --cask docker
 brew install --cask google-cloud-sdk
 brew install nvm
 brew install tfenv
+brew install ubuntu/microk8s/microk8s
