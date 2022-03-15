@@ -24,3 +24,4 @@ brew install --cask appcleaner
 brew install --cask slack
 brew install --cask visual-studio-code
 brew install --cask zoomus
+brew install --cask figma
