@@ -13,11 +13,15 @@ brew install ranger
 brew install jq
 brew install htop
 brew install fzf
-brew install neovim
 /usr/local/opt/fzf/install
+brew install neovim
 brew install pyenv
+brew install watch
+brew install poetry
+brew install stern
 brew install --cask docker
 brew install --cask google-cloud-sdk
+brew install kubectx
 brew install nvm
 brew install tfenv
 brew install ubuntu/microk8s/microk8s
