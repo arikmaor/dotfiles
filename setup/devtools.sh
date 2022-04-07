@@ -5,6 +5,7 @@ brew install z
 brew install wget
 brew install antigen
 brew install direnv
+brew install tig
 brew install hub
 brew install gh
 brew install the_silver_searcher
