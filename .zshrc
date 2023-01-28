@@ -17,8 +17,6 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init --path)"
 fi
 
-eval "$(direnv hook zsh)"
-
 source /opt/homebrew/share/antigen/antigen.zsh
 export DEFAULT_USER=arik # for agnoster theme
 
