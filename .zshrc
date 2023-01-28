@@ -10,6 +10,7 @@ export NVM_DIR="$HOME/.nvm"
 source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 source <(kubectl completion zsh)
+# source <(k3d completion zsh)
 
 export PYTHON_CONFIGURE_OPTS="--enable-framework"
 if command -v pyenv 1>/dev/null 2>&1; then
