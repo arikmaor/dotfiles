@@ -22,6 +22,8 @@ export DEFAULT_USER=arik # for agnoster theme
 
 export EDITOR=nvim
 export KUBE_EDITOR=nvim
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+
 
 antigen use oh-my-zsh
 antigen theme agnoster
