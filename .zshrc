@@ -14,6 +14,7 @@ source <(kubectl completion zsh)
 export PYTHON_CONFIGURE_OPTS="--enable-framework"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
+  eval "$(pyenv init --path)"
 fi
 
 eval "$(direnv hook zsh)"
