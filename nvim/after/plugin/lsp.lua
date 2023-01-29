@@ -6,6 +6,10 @@ lsp.preset('recommended')
 local lsp = require('lsp-zero')
 lsp.preset('recommended')
 
+lsp.set_preferences({
+  set_lsp_keymaps = {omit = {'gr'}}
+})
+
 -- When you don't have mason.nvim installed
 -- You'll need to list the servers installed in your system
 local servers = {
