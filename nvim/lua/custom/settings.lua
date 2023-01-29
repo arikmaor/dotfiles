@@ -7,3 +7,5 @@ vim.o.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.o.undofile = true
 
 vim.o.scrolloff = 8
+
+vim.o.guicursor='a:block-Cursor'
