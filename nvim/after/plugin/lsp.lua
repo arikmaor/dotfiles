@@ -10,6 +10,14 @@ lsp.set_preferences({
   set_lsp_keymaps = {omit = {'gr'}}
 })
 
+lsp.on_attach(function(client, bufnr)
+  local opts = {buffer = bufnr, remap = false}
+
+  vim.keymap.set('n', '<leader>rn', function() vim.lsp.buf.rename() end, opts)
+  vim.keymap.set('n', '<leader>rr', function() vim.lsp.buf.references() end, opts)
+  vim.keymap.set('n', '<leader>ac', function() vim.lsp.buf.code_action() end, opts)
+end)
+
 -- When you don't have mason.nvim installed
 -- You'll need to list the servers installed in your system
 local servers = {
