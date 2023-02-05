@@ -21,7 +21,10 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 -- vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()]]
-vim.cmd [[autocmd BufWritePre * :EslintFixAll]]
+vim.cmd [[autocmd BufWritePre *.js :EslintFixAll]]
+vim.cmd [[autocmd BufWritePre *.jsx :EslintFixAll]]
+vim.cmd [[autocmd BufWritePre *.ts :EslintFixAll]]
+vim.cmd [[autocmd BufWritePre *.tsx :EslintFixAll]]
 
 -- When you don't have mason.nvim installed
 -- You'll need to list the servers installed in your system
