@@ -55,6 +55,13 @@ alias t=terraform
 alias k=kubectl
 alias kctx=kubectx
 alias kns=kubens
+alias mux=tmuxinator
+alias o='fzf_tmuxinator_project'
+
+fzf_tmuxinator_project() {
+  local proj=$(tmuxinator list -n | tail -n +2 | fzf)
+  tmuxinator start $proj
+}
 
 f3() {
   if [[ "$1" == '' ]]; then
