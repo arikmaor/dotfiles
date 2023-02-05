@@ -21,8 +21,10 @@ return require('packer').startup(function(use)
     as = 'gruvbox',
     vim.cmd.colorscheme('gruvbox')
   }
-  use 'vim-airline/vim-airline'
-  use 'vim-airline/vim-airline-themes'
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 
   -- git integration
   use 'tpope/vim-fugitive'
