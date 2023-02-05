@@ -69,6 +69,9 @@ return require('packer').startup(function(use)
   -- undo tree
   use 'mbbill/undotree'
 
+  -- tmux integration
+  use 'christoomey/vim-tmux-navigator'
+
   -- lsp
   use {
     'VonHeikemen/lsp-zero.nvim',

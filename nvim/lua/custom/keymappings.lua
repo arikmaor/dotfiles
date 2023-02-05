@@ -1,10 +1,10 @@
 vim.g.mapleader = ' '
 
 -- easier split nav
-vim.keymap.set('n', '<C-J>', '<C-W><C-J>', {})
-vim.keymap.set('n', '<C-K>', '<C-W><C-K>', {})
-vim.keymap.set('n', '<C-L>', '<C-W><C-L>', {})
-vim.keymap.set('n', '<C-H>', '<C-W><C-H>', {})
+-- vim.keymap.set('n', '<C-H>', ':<C-U>TmuxNavigateLeft<cr>', {})
+-- vim.keymap.set('n', '<C-J>', ':<C-U>TmuxNavigateDown<cr>', {})
+-- vim.keymap.set('n', '<C-K>', ':<C-U>TmuxNavigateUp<cr>', {})
+-- vim.keymap.set('n', '<C-L>', ':<C-U>TmuxNavigateRight<cr>', {})
 
 -- tab navigation
 vim.keymap.set('n', '<C-[>', vim.cmd.tabp, {})
