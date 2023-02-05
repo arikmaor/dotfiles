@@ -2,7 +2,7 @@ name: dotfiles
 root: ~/.dotfiles/
 
 windows:
-  - editor:
+  - dotfiles:
       layout: main-horizontal
       panes:
         - vim
