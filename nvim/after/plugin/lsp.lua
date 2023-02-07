@@ -1,11 +1,6 @@
 local lsp = require('lsp-zero')
 lsp.preset('recommended')
 
--- Learn the keybindings, see :help lsp-zero-keybindings
--- Learn to configure LSP servers, see :help lsp-zero-api-showcase
-local lsp = require('lsp-zero')
-lsp.preset('recommended')
-
 lsp.set_preferences({
   set_lsp_keymaps = { omit = { 'gr', 'gd' } }
 })
