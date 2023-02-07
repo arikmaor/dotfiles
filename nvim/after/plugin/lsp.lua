@@ -20,6 +20,7 @@ vim.cmd [[autocmd BufWritePre *.js :EslintFixAll]]
 vim.cmd [[autocmd BufWritePre *.jsx :EslintFixAll]]
 vim.cmd [[autocmd BufWritePre *.ts :EslintFixAll]]
 vim.cmd [[autocmd BufWritePre *.tsx :EslintFixAll]]
+vim.cmd [[autocmd BufWritePre *.md :EslintFixAll]]
 
 -- When you don't have mason.nvim installed
 -- You'll need to list the servers installed in your system
