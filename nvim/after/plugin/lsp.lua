@@ -15,12 +15,28 @@ lsp.on_attach(function(client, bufnr)
   -- end, opts)
 end)
 
+function file_exists(name)
+   local f=io.open(name,"r")
+   if f~=nil then io.close(f) return true else return false end
+end
+
+vim.api.nvim_create_autocmd({"BufWritePre"}, {
+  pattern = {"*.js", "*.jsx", "*.ts", "*.tsx", "*.md"},
+  callback = function()
+    if (file_exists('./.eslintrc.yml') or file_exists('./.eslintrc.yaml')) then
+      vim.cmd('EslintFixAll')
+    end
+  end,
+})
+
+vim.api.nvim_create_autocmd({"BufWritePre"}, {
+  pattern = {"*.go"},
+  callback = function()
+    vim.lsp.buf.format();
+  end,
+})
+
 -- vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()]]
-vim.cmd [[autocmd BufWritePre *.js :EslintFixAll]]
-vim.cmd [[autocmd BufWritePre *.jsx :EslintFixAll]]
-vim.cmd [[autocmd BufWritePre *.ts :EslintFixAll]]
-vim.cmd [[autocmd BufWritePre *.tsx :EslintFixAll]]
-vim.cmd [[autocmd BufWritePre *.md :EslintFixAll]]
 
 -- When you don't have mason.nvim installed
 -- You'll need to list the servers installed in your system
