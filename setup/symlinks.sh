@@ -7,4 +7,5 @@ ln -s ~/.dotfiles/.zshenv ~/.zshenv
 ln -s ~/.dotfiles/.editorconfig ~/.editorconfig
 ln -s ~/.dotfiles/karabiner ~/.config/karabiner
 ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
+ln -s ~/.dotfiles/.alacritty.yml ~/.alacritty.yml
 
