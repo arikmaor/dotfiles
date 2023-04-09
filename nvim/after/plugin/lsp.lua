@@ -30,7 +30,7 @@ vim.api.nvim_create_autocmd({"BufWritePre"}, {
 })
 
 vim.api.nvim_create_autocmd({"BufWritePre"}, {
-  pattern = {"*.go"},
+  pattern = {"*.go", "*.svelte", "*.js", "*.jsx", "*.ts", "*.tsx", "*.md"},
   callback = function()
     vim.lsp.buf.format();
   end,
@@ -51,7 +51,8 @@ local servers = {
   'marksman',
   'pyright',
   'terraformls',
-  'yamlls'
+  'yamlls',
+  'svelte'
 }
 lsp.ensure_installed(servers)
 
