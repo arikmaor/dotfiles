@@ -41,7 +41,6 @@ vim.api.nvim_create_autocmd({"BufWritePre"}, {
 -- When you don't have mason.nvim installed
 -- You'll need to list the servers installed in your system
 local servers = {
-  'sumneko_lua',
   'tsserver',
   'eslint',
   'dockerls',
@@ -57,6 +56,6 @@ local servers = {
 lsp.ensure_installed(servers)
 
 -- (Optional) Configure lua language server for neovim
-lsp.nvim_workspace()
+-- lsp.nvim_workspace()
 
 lsp.setup()
