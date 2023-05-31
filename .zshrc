@@ -40,7 +40,7 @@ EOBUNDLES
 
 antigen apply
 
-export PATH="${PATH}:${HOME}/.krew/bin:$(go env GOPATH)/bin"
+export PATH="${PATH}:${HOME}/.krew/bin:$(go env GOPATH)/bin:${HOME}/.local/bin"
 
 RPROMPT=$'%{$fg[white]%}$(tf_prompt_info)%{$reset_color%}'
 
