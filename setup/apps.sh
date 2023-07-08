@@ -6,12 +6,6 @@ cd fonts
 cd ..
 rm -rf fonts
 
-# install iterm
-ITERM_SYNC_DIR="${HOME}/.dotfiles/iterm"
-brew install --cask iterm2
-defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool TRUE
-defaults write com.googlecode.iterm2 PrefsCustomFolder $ITERM_SYNC_DIR
-
 brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font
 brew install --cask google-chrome
