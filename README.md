@@ -1,6 +1,6 @@
 # dotfiles
 
-## New machine setup
+## New OSx setup
 1. Install command line developer tools: `xcode-select --install`.
 2. Install homebrew: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`.
 3. Clone this repo: `git clone git@github.com:arikmaor/dotfiles.git ~/dotfiles`.
