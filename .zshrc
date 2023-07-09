@@ -1,14 +1,15 @@
-FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+BREW_PREFIX=$(brew --prefix)
+FPATH="$BREW_PREFIX/share/zsh/site-functions:${FPATH}"
 
 autoload -Uz compinit
 compinit
 
 export NVM_DIR="$HOME/.nvm"
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+  [ -s "$BREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$BREW_PREFIX/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "$BREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$BREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+source "$BREW_PREFIX/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "$BREW_PREFIX/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 source <(kubectl completion zsh)
 source <(k3d completion zsh)
 source <(tensorleap completion zsh)
@@ -19,7 +20,7 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init --path)"
 fi
 
-source /opt/homebrew/share/antigen/antigen.zsh
+source $BREW_PREFIX/share/antigen/antigen.zsh
 export DEFAULT_USER=arik # for agnoster theme
 
 export EDITOR=nvim
