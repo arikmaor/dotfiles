@@ -11,11 +11,11 @@ vim.keymap.set('n', '<C-[>', vim.cmd.tabp, {})
 vim.keymap.set('n', '<C-]>', vim.cmd.tabn, {})
 
 -- copy to system clipboard
-vim.keymap.set('n', '<leader>y', '"*y', {})
-vim.keymap.set('v', '<leader>y', '"*y', {})
+vim.keymap.set('n', '<leader>y', '"+y', {})
+vim.keymap.set('v', '<leader>y', '"+y', {})
 
 -- paste without copying
-vim.keymap.set('n', '<leader>p', '"*y', {})
+vim.keymap.set('n', '<leader>p', '"+y', {})
 
 -- delete to void
 vim.keymap.set('n', '<leader>d', '"_d')
