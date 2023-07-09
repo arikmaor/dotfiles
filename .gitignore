@@ -1,4 +1,5 @@
 *.local
+fonts/.uuid
 .DS_Store
 nvim/.netrwhist
 nvim/plugged/
