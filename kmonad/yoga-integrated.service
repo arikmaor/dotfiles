@@ -1,0 +1,13 @@
+[Unit]
+Description=integrated keyboard kmonad
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=kmonad /home/arik/dotfiles/kmonad/yoga-integrated.kbd
+Restart=always
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,14 @@
+[Unit]
+Description=Ducky-One kmonad
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/arik/dotfiles/kmonad/ducky-one-script.sh
+Restart=always
+RestartSec=5
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
