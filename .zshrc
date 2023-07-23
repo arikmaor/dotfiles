@@ -84,3 +84,4 @@ f3() {
   fi
 }
 
+neofetch
