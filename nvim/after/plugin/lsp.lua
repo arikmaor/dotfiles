@@ -51,7 +51,8 @@ local servers = {
   'pyright',
   'terraformls',
   'yamlls',
-  'svelte'
+  'svelte',
+  'gopls'
 }
 lsp.ensure_installed(servers)
 
