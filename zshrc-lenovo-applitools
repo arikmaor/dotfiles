@@ -33,7 +33,6 @@ antigen apply
 
 RPROMPT=$'%{$fg[white]%}$(tf_prompt_info)%{$reset_color%}'
 
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source <(fzf --zsh)
 
 alias git=hub
@@ -42,25 +41,3 @@ alias t=terraform
 alias k=kubectl
 alias kctx=kubectx
 alias kns=kubens
-
-f3() {
-  if [[ "$1" == '' ]]; then
-    gcs_path=$(gsutil ls $1 | fzf --tac)
-  else
-    gcs_path=$((echo '..' && gsutil ls $1) | fzf --tac)
-  fi
-
-  if [[ "$gcs_path" == '..' ]]; then
-    gcs_path=$(dirname $1)/
-  fi
-
-  if [[ "$gcs_path" == 'gs:/' ]]; then
-    f3
-  elif [[ "$gcs_path" =~ '^.*/$' ]]; then
-    f3 $gcs_path
-  elif [[ "$gcs_path" != '' ]]; then
-    echo $gcs_path
-  fi
-}
-
-neofetch
