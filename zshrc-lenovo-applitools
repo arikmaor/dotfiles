@@ -1,0 +1,66 @@
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+BREW_PREFIX=$(brew --prefix)
+
+fpath=(~/.docker/completions \\$fpath)
+autoload -Uz compinit
+compinit
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+[ -s kubectl ] && source <(kubectl completion zsh)
+[ -s k3d ] && source <(k3d completion zsh)
+
+source $BREW_PREFIX/share/antigen/antigen.zsh
+export DEFAULT_USER=arik # for agnoster theme
+
+export EDITOR=nvim
+export KUBE_EDITOR=nvim
+
+antigen use oh-my-zsh
+antigen theme agnoster
+
+antigen bundles <<EOBUNDLES
+  git
+  z
+  zsh-users/zsh-syntax-highlighting
+  terraform
+EOBUNDLES
+
+antigen apply
+
+RPROMPT=$'%{$fg[white]%}$(tf_prompt_info)%{$reset_color%}'
+
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
+
+alias git=hub
+alias vim=nvim
+alias t=terraform
+alias k=kubectl
+alias kctx=kubectx
+alias kns=kubens
+
+f3() {
+  if [[ "$1" == '' ]]; then
+    gcs_path=$(gsutil ls $1 | fzf --tac)
+  else
+    gcs_path=$((echo '..' && gsutil ls $1) | fzf --tac)
+  fi
+
+  if [[ "$gcs_path" == '..' ]]; then
+    gcs_path=$(dirname $1)/
+  fi
+
+  if [[ "$gcs_path" == 'gs:/' ]]; then
+    f3
+  elif [[ "$gcs_path" =~ '^.*/$' ]]; then
+    f3 $gcs_path
+  elif [[ "$gcs_path" != '' ]]; then
+    echo $gcs_path
+  fi
+}
+
+neofetch
