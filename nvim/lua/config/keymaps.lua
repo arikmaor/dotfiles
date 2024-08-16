@@ -5,8 +5,8 @@
 vim.keymap.del({ "n", "v" }, "s")
 
 -- tab navigation
-vim.keymap.set("n", "<C-[>", vim.cmd.tabp, {})
-vim.keymap.set("n", "<C-]>", vim.cmd.tabn, {})
+vim.keymap.set("n", "<leader>[", vim.cmd.tabp, {})
+vim.keymap.set("n", "<leader>]", vim.cmd.tabn, {})
 
 -- copy to system clipboard
 vim.keymap.set({ "n", "v" }, "<leader>y", '"+y', {})
