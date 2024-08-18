@@ -14,7 +14,11 @@ return {
       {
         "<leader>rr",
         function()
-          require("telescope.builtin").lsp_references()
+          if vim.bo.filetype == "cs" then
+            require("omnisharp_extended").telescope_lsp_references()
+          else
+            require("telescope.builtin").lsp_references()
+          end
         end,
         desc = "Find References",
       },
