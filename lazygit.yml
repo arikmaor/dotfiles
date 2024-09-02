@@ -1,0 +1,9 @@
+gui:
+  nerdFontsVersion: "3"
+
+keybinding:
+  universal:
+    quit: <disabled>
+    return: q
+
+quitOnTopLevelReturn: true
