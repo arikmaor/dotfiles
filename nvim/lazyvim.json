@@ -1,8 +1,9 @@
 {
   "extras": [
     "lazyvim.plugins.extras.dap.core",
-    "lazyvim.plugins.extras.lang.typescript",
-    "lazyvim.plugins.extras.lang.omnisharp"
+    "lazyvim.plugins.extras.lang.omnisharp",
+    "lazyvim.plugins.extras.lang.terraform",
+    "lazyvim.plugins.extras.lang.typescript"
   ],
   "news": {
     "NEWS.md": "6520"
