@@ -4,6 +4,8 @@
 
 vim.g.blamer_enabled = 1
 
+vim.o.swapfile = false
+
 local opt = vim.opt
 
 opt.clipboard = "unnamed"
