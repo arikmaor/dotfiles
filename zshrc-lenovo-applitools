@@ -12,6 +12,7 @@ export NVM_DIR="$HOME/.nvm"
 
 [ -s kubectl ] && source <(kubectl completion zsh)
 [ -s k3d ] && source <(k3d completion zsh)
+[ -s temporal ] && source <(temporal completion zsh)
 
 source $BREW_PREFIX/share/antigen/antigen.zsh
 export DEFAULT_USER=arik # for agnoster theme
