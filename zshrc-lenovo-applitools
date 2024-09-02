@@ -39,6 +39,8 @@ export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 
 source <(fzf --zsh)
 
+export CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox
+
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
