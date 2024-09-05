@@ -25,10 +25,7 @@
   insteadOf = https://gitlab.com/
 [url "ssh://git@bitbucket.org/"]
   insteadOf = https://bitbucket.org/
-[credential "https://github.com"]
-	helper = !/opt/homebrew/bin/gh auth git-credential
-[credential "https://gist.github.com"]
-	helper = !/opt/homebrew/bin/gh auth git-credential
+
 [init]
 	defaultBranch = master
 [alias]
