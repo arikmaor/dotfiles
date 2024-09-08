@@ -49,6 +49,7 @@ alias t=terraform
 alias k=kubectl
 alias kctx=kubectx
 alias kns=kubens
+alias lg=lazygit
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /home/linuxbrew/.linuxbrew/Cellar/tfenv/3.0.0/versions/1.5.7/terraform terraform
