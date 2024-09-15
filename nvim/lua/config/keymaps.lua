@@ -5,17 +5,14 @@
 vim.keymap.del({ "n", "v" }, "s")
 
 -- tab navigation
-vim.keymap.set("n", "<leader>[", vim.cmd.tabp, {})
-vim.keymap.set("n", "<leader>]", vim.cmd.tabn, {})
+vim.keymap.set("n", "<leader>[", vim.cmd.tabp, { desc = "Prev Tab" })
+vim.keymap.set("n", "<leader>]", vim.cmd.tabn, { desc = "Next Tab" })
 
 -- copy to system clipboard
-vim.keymap.set({ "n", "v" }, "<leader>y", '"+y', {})
-
--- paste without copying
-vim.keymap.set("n", "<leader>p", '"+y', {})
+vim.keymap.set({ "n", "v" }, "<leader>y", '"+y', { desc = "Yank to system clipboard" })
 
 -- delete to void
-vim.keymap.set({ "n", "v" }, "<leader>d", '"_d')
+vim.keymap.set({ "n", "v" }, "<leader>d", '"_d', { desc = "Delete without yank" })
 
 -- move line in visual mode
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
