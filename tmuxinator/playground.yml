@@ -1,7 +1,0 @@
-name: playground
-root: ~/projects/
-
-windows:
-  - playground:
-      panes:
-        - 
