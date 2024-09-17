@@ -37,17 +37,15 @@ return {
       desc = "Focus NvimTree",
     },
   },
-  config = function()
-    require("nvim-tree").setup({
-      on_attach = on_attach,
-      update_focused_file = {
-        enable = true,
+  opts = {
+    on_attach = on_attach,
+    update_focused_file = {
+      enable = true,
+    },
+    actions = {
+      open_file = {
+        quit_on_open = true,
       },
-      actions = {
-        open_file = {
-          quit_on_open = true,
-        },
-      },
-    })
-  end,
+    },
+  },
 }
