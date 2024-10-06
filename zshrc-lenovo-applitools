@@ -79,4 +79,15 @@ gfix() {
   # fi
 }
 
-
+refresh_k8s_clusters() {
+  for sub in $(az account list | jq -r '.[].id | select(. != "2ca03b1f-eabe-479a-9129-6133fc785c55" and . != "2ca03b1f-eabe-479a-9129-6133fc785c55")'); do
+    echo $sub
+    for group in $(az group list --subscription $sub | jq -r '.[].name'); do
+      echo "   $group"
+      for name in $(az aks list --subscription $sub --resource-group $group | jq -r '.[].name'); do
+        echo "       $name"
+        az aks get-credentials --subscription $sub --resource-group $group --name $name
+      done
+    done
+  done
+}
