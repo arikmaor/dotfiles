@@ -91,3 +91,9 @@ refresh_k8s_clusters() {
     done
   done
 }
+
+function fs() {
+  VAULT_NAME=AutonomousNewVault
+  secretName=$(az keyvault secret list --vault-name $VAULT_NAME | jq -r '.[].id | split("/")[-1]' | fzf)
+  az keyvault secret show --vault-name $VAULT_NAME --name $secretName | jq -r '.value'
+}
