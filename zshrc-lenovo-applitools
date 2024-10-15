@@ -93,3 +93,7 @@ function fs() {
   secretName=$(az keyvault secret list --vault-name $VAULT_NAME | jq -r '.[].id | split("/")[-1]' | fzf)
   az keyvault secret show --vault-name $VAULT_NAME --name $secretName | jq -r '.value'
 }
+
+alias azg='az fzf group'
+alias azl='az fzf location'
+alias azs='az fzf subscription'
