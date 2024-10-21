@@ -33,7 +33,7 @@ antigen apply
 RPROMPT=$'%{$fg[white]%}$(tf_prompt_info)%{$reset_color%}'
 
 export DOTNET_ROOT=$HOME/.dotnet
-export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools:$HOME/dotfiles/scripts
 
 export CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox
 

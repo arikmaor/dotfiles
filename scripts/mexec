@@ -1,0 +1,3 @@
+#!/usr/bin/env zsh
+
+for d in ./*/ ; do (cd "$d" && echo "$d" && eval "$1" && echo ---); done

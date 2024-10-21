@@ -1,6 +1,8 @@
 BREW_PREFIX=$(brew --prefix)
 FPATH="$BREW_PREFIX/share/zsh/site-functions:${FPATH}"
 
+export PATH="$PATH:$HOME/dotfiles/scripts"
+
 autoload -Uz compinit
 compinit
 
