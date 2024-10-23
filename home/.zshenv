@@ -1,5 +1,3 @@
-alias egrep='grep -E --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox}'
-alias fgrep='grep -F --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox}'
 alias g=git
 alias ga='git add'
 alias gaa='git add --all'
@@ -198,4 +196,3 @@ alias gwta='git worktree add'
 alias gwtls='git worktree list'
 alias gwtmv='git worktree move'
 alias gwtrm='git worktree remove'
-alias lg=lazygit

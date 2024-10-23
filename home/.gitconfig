@@ -1,10 +1,7 @@
-# [user]
-# 	name = Arik Maor
-# 	email = arikmaor@gmail.com
 [include]
-	path = ~/dotfiles/.gitconfig.local
+	path = ~/.gitconfig.local
 [core]
-	excludesfile = ~/dotfiles/.gitignore
+	excludesfile = ~/.gitignore
 	editor = nvim
 	attributesfile = ~/.gitattributes
 	autocrlf = input
@@ -29,7 +26,3 @@
 
 [init]
 	defaultBranch = master
-[alias]
-	diff-image = "!f() { cd -- \"${GIT_PREFIX:-.}\"; GIT_DIFF_IMAGE_ENABLED=1 git diff \"$@\"; }; f"
-[diff "image"]
-	command = ~/git-diff-image/git_diff_image
