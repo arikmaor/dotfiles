@@ -36,11 +36,10 @@ export CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox
 
 source <(fzf --zsh)
 
-alias pbcopy='xclip -selection clipboard'
-alias pbpaste='xclip -selection clipboard -o'
+export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 
 alias vim=nvim
-alias t=terraform
 alias k=kubectl
 alias kctx=kubectx
 alias kns=kubens
