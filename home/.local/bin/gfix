@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+rev=$1
+
+if [[ -z $rev ]]; then
+  rev=$(git log --oneline | fzf --reverse --height=10 | cut -d ' ' -f 1)
+fi
+
+if [[ -z $rev ]]; then
+  return 0
+fi
+
+git commit --fixup $rev
+git rebase --autostash -i $rev^

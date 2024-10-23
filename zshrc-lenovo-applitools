@@ -46,50 +46,6 @@ alias kctx=kubectx
 alias kns=kubens
 alias lg=lazygit
 
-gfix() {
-  rev=$1
-
-  if [[ -z $rev ]]; then
-    rev=$(git log --oneline | fzf --reverse --height=10 | cut -d ' ' -f 1)
-  fi
-
-  if [[ -z $rev ]]; then
-    return 0
-  fi
-
-  git commit --fixup $rev
-
-  # CHANGED=$(git diff-index --name-only HEAD --)
-  # if [[ -n $CHANGED ]]; then
-  #   git stash push
-  # fi
-
-  git rebase --autostash -i $rev^
-
-  # if [[ -n $CHANGED ]]; then
-  #   git stash pop
-  # fi
-}
-
-refresh_k8s_clusters() {
-  for sub in $(az account list | jq -r '.[].id | select(. != "2ca03b1f-eabe-479a-9129-6133fc785c55" and . != "2ca03b1f-eabe-479a-9129-6133fc785c55")'); do
-    echo $sub
-    for group in $(az group list --subscription $sub | jq -r '.[].name'); do
-      echo "   $group"
-      for name in $(az aks list --subscription $sub --resource-group $group | jq -r '.[].name'); do
-        echo "       $name"
-        az aks get-credentials --subscription $sub --resource-group $group --name $name
-      done
-    done
-  done
-}
-
-function fs() {
-  VAULT_NAME=AutonomousNewVault
-  secretName=$(az keyvault secret list --vault-name $VAULT_NAME | jq -r '.[].id | split("/")[-1]' | fzf)
-  az keyvault secret show --vault-name $VAULT_NAME --name $secretName | jq -r '.value'
-}
-
 alias azg='az fzf group'
 alias azl='az fzf location'
 alias azs='az fzf subscription'

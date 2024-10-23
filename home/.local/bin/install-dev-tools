@@ -1,0 +1,41 @@
+echo Running apt-get update and upgrade...
+sudo apt-get update & apt-get upgrade
+
+echo Installing basic apt-get stuff...
+sudo apt-get install build-essential procps curl wget file git tmux
+
+echo Installing homebrew...
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+echo Installing tools with homebrew...
+brew install gcc
+brew install antigen
+brew install fzf
+/usr/local/opt/fzf/install
+brew install ripgrep
+brew install z
+brew install tig
+brew install hub
+brew install gh
+brew install the_silver_searcher
+brew install fd
+brew install ranger
+brew install jq
+brew install htop
+brew install btop
+brew install neovim
+brew install nvm
+brew install tfenv
+brew install pyenv
+brew install watch
+brew install stern
+brew install kubernetes-cli
+brew install kubectx
+brew install lazygit
+brew install mongosh
+brew install youtube-dl
+brew install temporal
+
+echo Installing docker...
+/bin/bash -c "$(https://get.docker.com)"
+
