@@ -33,7 +33,6 @@ antigen bundles <<EOBUNDLES
   z
   macos
   zsh-users/zsh-syntax-highlighting
-  docker
   terraform
 EOBUNDLES
 
