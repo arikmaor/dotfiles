@@ -49,8 +49,6 @@ RPROMPT=$'%{$fg[white]%}$(tf_prompt_info)%{$reset_color%}'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-[ -f ~/projects/leatherman/source-me.sh ] && source ~/projects/leatherman/source-me.sh
-
 
 alias git=hub
 alias vim=nvim
@@ -58,13 +56,6 @@ alias t=terraform
 alias k=kubectl
 alias kctx=kubectx
 alias kns=kubens
-alias mux=tmuxinator
-alias o='fzf_tmuxinator_project'
-
-fzf_tmuxinator_project() {
-  local proj=$(tmuxinator list -n | tail -n +2 | fzf)
-  tmuxinator start $proj
-}
 
 f3() {
   if [[ "$1" == '' ]]; then
@@ -85,5 +76,3 @@ f3() {
     echo $gcs_path
   fi
 }
-
-neofetch
