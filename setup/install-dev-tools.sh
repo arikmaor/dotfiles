@@ -9,6 +9,7 @@ brew install \
   tig \
   hub \
   gh \
+  golang \
   the_silver_searcher \
   fd \
   ranger \
