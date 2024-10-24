@@ -19,9 +19,7 @@ brew install jq
 brew install htop
 brew install btop
 brew install neovim
-brew install nvm
 brew install tfenv
-brew install pyenv
 brew install watch
 brew install stern
 brew install kubernetes-cli
