@@ -27,6 +27,8 @@ brew install stern
 brew install kubernetes-cli
 brew install kubectx
 brew install lazygit
+brew install k3d
+brew install fnm
 brew install mongosh
 brew install youtube-dl
 brew install temporal

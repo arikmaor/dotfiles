@@ -22,8 +22,6 @@ EOBUNDLES
 
 antigen apply
 
-[ -s kubectl ] && source <(kubectl completion zsh)
-[ -s k3d ] && source <(k3d completion zsh)
 source <(fzf --zsh)
 
 export PATH="${PATH}:$(go env GOPATH)/bin"
