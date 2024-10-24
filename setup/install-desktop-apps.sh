@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-flatpak install \
+flatpak install -y \
   io.github.mimbrero.WhatsAppDesktop \
   us.zoom.Zoom \
   org.flameshot.Flameshot \

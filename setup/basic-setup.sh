@@ -15,10 +15,13 @@ echo Running apt update and upgrade
 apt update & apt upgrade -y
 
 echo Installing basic apt-get stuff
-apt install -y build-essential procps curl wget file git tmux brave-browser alacritty zsh
+apt install -y build-essential procps curl wget file git tmux brave-browser alacritty zsh stow
 
 echo Setting zsh as default shell for root
 chsh -s $(which zsh)
 
-echo Run this now (without sudo) to set zsh as the default shell:
+echo 'Run this now (without sudo) to set zsh as the default shell:'
 echo "  chsh -s $(which zsh)"
+
+echo 'Run this to install homebrew:'
+echo '  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'
