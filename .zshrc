@@ -1,12 +1,8 @@
 BREW_PREFIX=$(brew --prefix)
-FPATH="$BREW_PREFIX/share/zsh/site-functions:${FPATH}"
+FPATH="$BREW_PREFIX/share/zsh/site-functions:$FPATH"
 
 autoload -Uz compinit
 compinit
-
-[ -s kubectl ] && source <(kubectl completion zsh)
-[ -s k3d ] && source <(k3d completion zsh)
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 source $BREW_PREFIX/share/antigen/antigen.zsh
 export DEFAULT_USER=arik # for agnoster theme
@@ -25,6 +21,10 @@ antigen bundles <<EOBUNDLES
 EOBUNDLES
 
 antigen apply
+
+[ -s kubectl ] && source <(kubectl completion zsh)
+[ -s k3d ] && source <(k3d completion zsh)
+source <(fzf --zsh)
 
 export PATH="${PATH}:$(go env GOPATH)/bin"
 

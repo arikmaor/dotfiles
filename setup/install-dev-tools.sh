@@ -1,8 +1,4 @@
-echo Running apt-get update and upgrade...
-sudo apt-get update & apt-get upgrade
-
-echo Installing basic apt-get stuff...
-sudo apt-get install build-essential procps curl wget file git tmux
+#!/usr/bin/env zsh
 
 echo Installing homebrew...
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -11,7 +7,6 @@ echo Installing tools with homebrew...
 brew install gcc
 brew install antigen
 brew install fzf
-/usr/local/opt/fzf/install
 brew install ripgrep
 brew install z
 brew install tig
