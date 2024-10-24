@@ -1,3 +1,5 @@
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 BREW_PREFIX=$(brew --prefix)
 FPATH="$BREW_PREFIX/share/zsh/site-functions:$FPATH"
 
