@@ -12,7 +12,7 @@ curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 
 echo Running apt update and upgrade
-apt update & apt upgrade
+apt update & apt upgrade -y
 
 echo Installing basic apt-get stuff
 apt install -y build-essential procps curl wget file git tmux brave-browser alacritty zsh
