@@ -9,7 +9,7 @@ echo Running apt-get update and upgrade
 apt-get update & apt-get upgrade
 
 echo Installing basic apt-get stuff
-apt-get install build-essential procps curl wget file git tmux brave-browser alacritty zsh
+apt-get install -y build-essential procps curl wget file git tmux brave-browser alacritty zsh
 
 echo Setting zsh as default shell
 chsh -s $(which zsh)
