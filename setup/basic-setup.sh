@@ -17,5 +17,8 @@ apt update & apt upgrade -y
 echo Installing basic apt-get stuff
 apt install -y build-essential procps curl wget file git tmux brave-browser alacritty zsh
 
-echo Setting zsh as default shell
+echo Setting zsh as default shell for root
 chsh -s $(which zsh)
+
+echo Run this now (without sudo) to set zsh as the default shell:
+echo "  chsh -s $(which zsh)"
