@@ -5,7 +5,6 @@ brew install \
   ripgrep \
   z \
   tig \
-  hub \
   golang \
   the_silver_searcher \
   fd \
