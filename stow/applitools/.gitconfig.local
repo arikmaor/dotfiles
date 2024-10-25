@@ -1,0 +1,8 @@
+[user]
+	name = Arik Maor
+	email = arik.maor@applitools.com
+
+[credential "https://github.com"]
+	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
