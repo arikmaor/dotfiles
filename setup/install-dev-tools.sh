@@ -1,6 +1,7 @@
+apt remove gh
+
 brew install \
   gcc \
-  antigen \
   fzf \
   ripgrep \
   z \
@@ -10,6 +11,7 @@ brew install \
   fd \
   ranger \
   jq \
+  hub \
   htop \
   btop \
   neovim \
