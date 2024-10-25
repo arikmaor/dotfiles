@@ -6,26 +6,26 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 echo Running brew install
 brew install \
-  gcc \
-  fzf \
-  ripgrep \
-  z \
-  tig \
-  golang \
-  fd \
-  ranger \
-  xclip \
-  jq \
-  htop \
   btop \
-  neovim \
-  tfenv \
-  watch \
-  stern \
-  kubernetes-cli \
-  kubectx \
-  lazygit \
-  node@20 \
+  fd \
+  fzf \
+  gcc \
+  golang \
+  htop \
+  jq \
   k3d \
+  kubectx \
+  kubernetes-cli \
+  lazygit \
+  neovim \
+  node@20 \
+  ranger \
+  ripgrep \
+  stern \
+  temporal \
+  tfenv \
+  tig \
+  watch \
+  xclip \
   youtube-dl \
-  temporal
+  z
