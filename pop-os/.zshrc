@@ -1,12 +1,11 @@
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-BREW_PREFIX=$(brew --prefix)
-FPATH="$BREW_PREFIX/share/zsh/site-functions:$FPATH"
+FPATH="$(brew --prefix)/share/zsh/site-functions:$FPATH"
 
 autoload -Uz compinit
 compinit
 
-source $BREW_PREFIX/share/antigen/antigen.zsh
+source ~/.local/share/antigen.zsh
 export DEFAULT_USER=arik # for agnoster theme
 
 export EDITOR=nvim
