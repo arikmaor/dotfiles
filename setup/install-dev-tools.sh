@@ -6,7 +6,6 @@ brew install \
   z \
   tig \
   hub \
-  gh \
   golang \
   the_silver_searcher \
   fd \
@@ -26,7 +25,4 @@ brew install \
   mongosh \
   youtube-dl \
   temporal
-
-echo Installing docker...
-/bin/bash -c "$(https://get.docker.com)"
 
