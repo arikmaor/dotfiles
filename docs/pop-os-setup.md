@@ -8,6 +8,8 @@
 1. Login to github and create ssh key: `gh auth login`
 1. Clone this repo: `git clone git@github.com:arikmaor/dotfiles.git ~/dotfiles`.
 1. Run `stow base pop-os` in `~/dotfiles`
+1. Restart _Alacritty_ and install tmux plugins (`prefix + I`)
+1. Open vim and let the plugin manager install everything
 1. Configure system settings: `~/dotfiles/setup/pop-os-settings.sh`.
 1. Install dev tools: `~/dotfiles/setup/install-dev-tools.sh.sh`.
 1. Install applications: `~/dotfiles/setup/install-desktop-apps.sh`.
