@@ -12,11 +12,10 @@ brew install \
   z \
   tig \
   golang \
-  the_silver_searcher \
   fd \
   ranger \
+  xclip \
   jq \
-  hub \
   htop \
   btop \
   neovim \
