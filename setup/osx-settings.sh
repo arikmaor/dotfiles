@@ -35,8 +35,8 @@ defaults write com.apple.systemuiserver menuExtras -array-add "/System/Library/C
 
 # Restart ui
 for app in \
-	"Dock" \
-	"Finder" \
-	"SystemUIServer"; do
-	killall "${app}" &> /dev/null
+  "Dock" \
+  "Finder" \
+  "SystemUIServer"; do
+  killall "${app}" &>/dev/null
 done
