@@ -13,6 +13,9 @@ dconf write /org/gnome/shell/extensions/dash-to-dock/dock-fixed false
 # Display dock on all monitors
 dconf write /org/gnome/shell/extensions/dash-to-dock/multi-monitor true
 
+# Set default apps (always appears in the dock)
+dconf write /org/gnome/shell/favorite-apps '["org.gnome.Nautilus.desktop", "com.alacritty.Alacritty.desktop", "brave-browser.desktop"]'
+
 # Enable workspace only on primary display
 dconf write /org/gnome/mutter/workspaces-only-on-primary true
 
@@ -21,6 +24,9 @@ dconf write /org/gnome/settings-daemon/plugins/power/power-button-action '"nothi
 
 # Show battery percentage
 dconf write /org/gnome/desktop/interface/show-battery-percentage true
+
+# Add hebrew input language
+dconf write /org/gnome/desktop/input-sources/sources '[("xkb", "us"), ("xkb", "il")]'
 
 # Switch input language for each window
 dconf write /org/gnome/desktop/input-sources/per-window true
