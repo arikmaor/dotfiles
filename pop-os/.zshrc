@@ -29,6 +29,8 @@ fi
 
 RPROMPT=$'%{$fg[white]%}$(tf_prompt_info)%{$reset_color%}'
 
+export PATH="/home/linuxbrew/.linuxbrew/opt/node@20/bin:$PATH"
+
 alias vim=nvim
 alias k=kubectl
 alias kctx=kubectx

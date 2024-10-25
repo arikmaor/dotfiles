@@ -26,9 +26,7 @@ brew install \
   kubernetes-cli \
   kubectx \
   lazygit \
+  node@20 \
   k3d \
-  fnm \
-  mongosh \
   youtube-dl \
   temporal
-
