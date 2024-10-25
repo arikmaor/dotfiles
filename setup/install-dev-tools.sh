@@ -1,5 +1,3 @@
-#!/usr/bin/env zsh
-
 brew install \
   gcc \
   antigen \
