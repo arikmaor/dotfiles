@@ -27,5 +27,5 @@ brew install \
   tig \
   watch \
   xclip \
-  youtube-dl \
+  yt-dlp \
   z
