@@ -6,7 +6,6 @@ flatpak install -y \
   org.flameshot.Flameshot \
   com.spotify.Client \
   com.visualstudio.code \
-  org.videolan.VLC \
   org.telegram.desktop \
   org.qbittorrent.qBittorrent \
   org.audacityteam.Audacity \
