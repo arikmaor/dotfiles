@@ -16,6 +16,7 @@ brew install \
   k3d \
   kubectx \
   kubernetes-cli \
+  gh \
   lazygit \
   neovim \
   node@20 \
