@@ -10,6 +10,7 @@
 
 ## Setup services
 
-1. Create link to service file: `sudo ln -s $PWD/kmonad/KEYBOARD.service /etc/systemd/system/KEYBOARD.service`
-1. Enable the service: `sudo systemctl enable KEYBOARD.service`
-1. Start the service: `sudo systemctl start KEYBOARD.service`
+1. Copy the wanted service files: `sudo cp $PWD/kmonad/KEYBOARD.service /etc/systemd/system`
+1. Reload systemd daemon: `sudo systemctl daemon-reload`
+1. Start the services: `sudo systemctl start KEYBOARD.service`
+1. Enable the services: `sudo systemctl enable KEYBOARD.service`
