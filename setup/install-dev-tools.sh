@@ -1,5 +1,5 @@
 echo Removing gh installed by apt
-apt remove gh
+sudo apt remove gh
 
 echo Installing tmux Plugin manager
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
