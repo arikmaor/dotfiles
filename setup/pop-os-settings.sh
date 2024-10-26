@@ -7,8 +7,12 @@ dconf write /org/gnome/shell/extensions/pop-cosmic/clock-alignment '"CENTER"'
 # Show all button on app titles
 dconf write /org/gnome/desktop/wm/preferences/button-layout '"appmenu:minimize,maximize,close"'
 
+# Put dock on the left
+dconf write /org/gnome/shell/extensions/dash-to-dock/dock-position '"LEFT"'
+
 # Auto hide dock
 dconf write /org/gnome/shell/extensions/dash-to-dock/dock-fixed false
+dconf write /org/gnome/shell/extensions/dash-to-dock/intellihide false
 
 # Display dock on all monitors
 dconf write /org/gnome/shell/extensions/dash-to-dock/multi-monitor true
@@ -37,3 +41,11 @@ dconf write /org/gnome/desktop/wm/keybindings/switch-input-source '["<Primary>sp
 
 # Disable window menu keybinding
 dconf write /org/gnome/desktop/wm/keybindings/activate-window-menu '@as []'
+
+# Enable tiling
+dconf write /org/gnome/mutter/edge-tiling false
+dconf write /org/gnome/shell/extensions/pop-shell/tile-by-default true
+dconf write /org/gnome/shell/extensions/pop-shell/gap-inner 'uint32 1'
+dconf write /org/gnome/shell/extensions/pop-shell/gap-outer 'uint32 1'
+dconf write /org/gnome/shell/extensions/pop-shell/active-hint true
+dconf write /org/gnome/shell/extensions/pop-shell/hint-color-rgba '"rgb(21,16,112)"'
