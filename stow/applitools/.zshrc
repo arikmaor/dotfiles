@@ -1,12 +1,13 @@
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-fpath=(~/.docker/completions $fpath)
+FPATH="$(brew --prefix)/share/zsh/site-functions:$FPATH"
+
 autoload -Uz compinit
 compinit
 
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /home/linuxbrew/.linuxbrew/Cellar/tfenv/3.0.0/versions/1.5.7/terraform terraform
-
+# autoload -U +X bashcompinit && bashcompinit
+# complete -o nospace -C /home/linuxbrew/.linuxbrew/Cellar/tfenv/3.0.0/versions/1.5.7/terraform terraform
+#
 source ~/.local/share/antigen.zsh
 export DEFAULT_USER=arik # for agnoster theme
 
@@ -26,11 +27,13 @@ EOBUNDLES
 
 antigen apply
 
+if command -v fzf > /dev/null; then
+  source <(fzf --zsh)
+fi
+
 RPROMPT=$'%{$fg[white]%}$(tf_prompt_info)%{$reset_color%}'
 
 export CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox
-
-source <(fzf --zsh)
 
 export DOTNET_ROOT=$HOME/.dotnet
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
@@ -39,7 +42,6 @@ alias vim=nvim
 alias k=kubectl
 alias kctx=kubectx
 alias kns=kubens
-alias lg=lazygit
 
 alias azg='az fzf group'
 alias azl='az fzf location'
