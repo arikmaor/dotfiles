@@ -39,6 +39,9 @@ return {
   },
   opts = {
     on_attach = on_attach,
+    view = {
+      width = {},
+    },
     update_focused_file = {
       enable = true,
     },
