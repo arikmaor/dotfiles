@@ -1,3 +1,5 @@
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 alias g=git
 alias ga='git add'
 alias gaa='git add --all'
