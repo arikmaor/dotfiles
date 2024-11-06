@@ -5,9 +5,6 @@ FPATH="$(brew --prefix)/share/zsh/site-functions:$FPATH"
 autoload -Uz compinit
 compinit
 
-# autoload -U +X bashcompinit && bashcompinit
-# complete -o nospace -C /home/linuxbrew/.linuxbrew/Cellar/tfenv/3.0.0/versions/1.5.7/terraform terraform
-#
 source ~/.local/share/antigen.zsh
 export DEFAULT_USER=arik # for agnoster theme
 
