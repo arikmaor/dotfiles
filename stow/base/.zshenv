@@ -198,3 +198,5 @@ alias gwtrm='git worktree remove'
 
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
+
+export PATH="/home/linuxbrew/.linuxbrew/opt/node@20/bin:$PATH"
