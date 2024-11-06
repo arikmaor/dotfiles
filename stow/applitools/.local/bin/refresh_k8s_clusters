@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-for sub in $(az account list | jq -r '.[].id | select(. != "2ca03b1f-eabe-479a-9129-6133fc785c55" and . != "2ca03b1f-eabe-479a-9129-6133fc785c55")'); do
+for sub in $(az account list | jq -r '.[].id | select(. != "2ca03b1f-eabe-479a-9129-6133fc785c55" and . != "2ca03b1f-eabe-479a-9129-6133fc785c55" and . != "c5580b0e-fc4d-40d1-9473-ae9bcf9b373d")'); do
   echo $sub
   for group in $(az group list --subscription $sub | jq -r '.[].name'); do
     echo "   $group"
