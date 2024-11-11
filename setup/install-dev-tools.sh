@@ -11,13 +11,17 @@ brew install \
   fzf \
   gcc \
   golang \
+  node@20 \
   htop \
   jq \
+  yq \
   k3d \
+  k9s \
   kubectx \
   kubernetes-cli \
   gh \
   lazygit \
+  ripgrep \
   neovim \
   node@20 \
   ranger \
