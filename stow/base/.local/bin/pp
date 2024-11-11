@@ -1,0 +1,24 @@
+#!/usr/bin/env zsh
+
+set -eo pipefail
+
+git_main_branch () {
+        command git rev-parse --git-dir &> /dev/null || return
+        local ref
+        for ref in refs/{heads,remotes/{origin,upstream}}/{main,trunk,mainline,default,stable,master}
+        do
+                if command git show-ref -q --verify $ref
+                then
+                        echo ${ref:t}
+                        return 0
+                fi
+        done
+        echo master
+        return 1
+}
+
+BRANCH=$(git branch --show-current)
+git pull --rebase
+git checkout $(git_main_branch)
+git rebase
+git branch --delete $BRANCH
