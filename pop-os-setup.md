@@ -15,6 +15,6 @@
 1. Install dev tools: `~/dotfiles/setup/install-dev-tools.sh`.
 1. Restart _Alacritty_ and install tmux plugins (`prefix + I`)
 1. Open neovim and let the plugin manager install everything
-1. Install Docker: `sudo /bin/bash -c "$(curl -fsSL https://get.docker.com)"` then set user permissiosn with `sudo usermod -aG docker $USER && newgrp docker`.
+1. Install Docker: `sudo /bin/bash -c "$(curl -fsSL https://get.docker.com)"` then set user permissions with `sudo usermod -aG docker $USER && newgrp docker`.
 1. Setup monitors
 1. [Setup KMonad](./kmonad/INSTALL.md)
