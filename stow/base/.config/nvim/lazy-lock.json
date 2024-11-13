@@ -48,6 +48,7 @@
   "omnisharp-extended-lsp.nvim": { "branch": "main", "commit": "aad7bf06b4ca0de816b919d475a75b30f5f62b61" },
   "persistence.nvim": { "branch": "main", "commit": "f6aad7dde7fcf54148ccfc5f622c6d5badd0cc3d" },
   "plenary.nvim": { "branch": "master", "commit": "2d9b06177a975543726ce5c73fca176cedbffe9d" },
+  "snacks.nvim": { "branch": "main", "commit": "f29c5865a8c71691b0be2311a7aa8d82caf4f4f3" },
   "telescope-fzf-native.nvim": { "branch": "main", "commit": "cf48d4dfce44e0b9a2e19a008d6ec6ea6f01a83b" },
   "telescope-live-grep-args.nvim": { "branch": "master", "commit": "8ad632f793fd437865f99af5684f78300dac93fb" },
   "telescope-terraform-doc.nvim": { "branch": "main", "commit": "28efe1f3cb2ed4c83fa69000ae8afd2f85d62826" },
