@@ -18,7 +18,7 @@ git_main_branch () {
 }
 
 BRANCH=$(git branch --show-current)
-git pull --rebase
 git checkout $(git_main_branch)
+git fetch --all --prune
 git rebase
-git branch --delete $BRANCH
+git branch -D $BRANCH
