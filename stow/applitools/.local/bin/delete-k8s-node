@@ -1,0 +1,15 @@
+#!/usr/bin/env zsh
+
+set -eo pipefail
+
+CLUSTER=$(kubectl config current-context)
+NODE_NAME=$(kubectl get nodes | fzf | cut -d ' ' -f 1)
+NODE_POOL=$(echo $NODE_NAME | cut -d '-' -f 2)
+
+echo "Deleting node $NODE_NAME (Cluster: $CLUSTER)"
+
+az aks nodepool delete-machines \
+  --cluster-name $CLUSTER \
+  --name $NODE_POOL \
+  --machine-names $NODE_NAME
+
