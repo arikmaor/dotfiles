@@ -1,2 +1,3 @@
 --dir ./stow
 --target $HOME
+--override \.zshrc

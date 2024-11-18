@@ -8,7 +8,7 @@
 1. Open _Brave Browser_ and start syncing
 1. Login to github and create ssh key: `gh auth login`
 1. Clone this repo: `git clone git@github.com:arikmaor/dotfiles.git ~/dotfiles`.
-1. Run `stow base main` in `~/dotfiles`
+1. Run `stow base` in `~/dotfiles`
 1. Restart _Alacritty_
 1. Configure system settings: `~/dotfiles/setup/pop-os-settings.sh`.
 1. Install applications: `~/dotfiles/setup/install-desktop-apps.sh`.
