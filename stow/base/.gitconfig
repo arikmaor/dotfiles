@@ -1,5 +1,6 @@
-[include]
-	path = ~/.gitconfig.local
+[user]
+	name = Arik Maor
+	email = arikmaor@gmail.com
 [core]
 	excludesfile = ~/.gitignore
 	editor = nvim
@@ -18,3 +19,9 @@
 	required = true
 [init]
 	defaultBranch = master
+[credential "https://github.com"]
+	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
+[include]
+	path = ~/.gitconfig.local
