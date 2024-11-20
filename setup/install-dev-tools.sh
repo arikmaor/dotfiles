@@ -31,6 +31,7 @@ brew install \
   temporal \
   tfenv \
   tig \
+  tree \
   watch \
   xclip \
   yt-dlp \
