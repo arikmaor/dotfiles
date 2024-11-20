@@ -1,7 +1,6 @@
 #!/usr/bin/env zsh
 
 for d in ./*/ ; do
-  echo ---
   pushd "$d"
   pwd
   eval "$*"
