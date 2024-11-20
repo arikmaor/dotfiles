@@ -8,6 +8,7 @@ alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
 alias vim=nvim
+alias v='vim .'
 alias k=kubectl
 alias kctx=kubectx
 alias kns=kubens
