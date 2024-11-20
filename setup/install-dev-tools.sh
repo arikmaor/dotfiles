@@ -24,6 +24,7 @@ brew install \
   ripgrep \
   neovim \
   node@20 \
+  postgresql \
   ranger \
   ripgrep \
   stern \
