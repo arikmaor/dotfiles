@@ -14,7 +14,7 @@ if [[ -z $selected ]]; then
   exit 0
 fi
 
-if ["$selected" = 'eyes']; then
+if [ "$selected" = "eyes" ]; then
   selected_name='eyes'
   selected="$HOME/devel/applitools/src"
 else
