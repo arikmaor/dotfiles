@@ -4,6 +4,7 @@ if [[ $# -eq 1 ]]; then
   selected=$1
 else
   selected=$(cat \
+    <(echo 'New Session') \
     <(tmux list-sessions -F '#{session_name}') \
     <(echo 'eyes') \
     <(find ~/projects ~/projects/autonomous ~/projects/preflight ~ -mindepth 1 -maxdepth 1 -type d -not -path '*/.*') |
@@ -12,9 +13,10 @@ fi
 
 if [[ -z $selected ]]; then
   exit 0
-fi
-
-if [ "$selected" = "eyes" ]; then
+elif [ "$selected" = "New Session" ]; then
+  selected_name=$(tr -dc A-Za-z0-9 </dev/urandom | head -c 4)
+  selected=$HOME
+elif [ "$selected" = "eyes" ]; then
   selected_name='eyes'
   selected="$HOME/devel/applitools/src"
 else
