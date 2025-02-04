@@ -6,6 +6,7 @@ else
   selected=$(cat \
     <(echo 'New Session') \
     <(tmux list-sessions -F '#{session_name}') \
+    <(echo '-----------') \
     <(echo 'eyes') \
     <(find ~/projects ~/projects/autonomous ~/projects/preflight ~ -mindepth 1 -maxdepth 1 -type d -not -path '*/.*') |
     fzf-tmux -p --reverse)
