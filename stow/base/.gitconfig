@@ -5,7 +5,6 @@
 	excludesfile = ~/.gitignore
 	editor = nvim
 	attributesfile = ~/.gitattributes
-	autocrlf = input
 [push]
 	default = simple
 [rebase]
