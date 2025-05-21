@@ -27,4 +27,4 @@ RPROMPT=$'%{$fg[white]%}$(tf_prompt_info)%{$reset_color%}'
 export CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox
 
 export DOTNET_ROOT=$HOME/.dotnet
-export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools:"$HOME/JetBrains Rider-2024.3.6/bin"
