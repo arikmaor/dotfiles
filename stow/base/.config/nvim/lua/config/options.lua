@@ -3,6 +3,7 @@
 -- Add any additional options here
 
 vim.g.blamer_enabled = 1
+vim.g.snacks_animate = false
 
 vim.o.swapfile = false
 
