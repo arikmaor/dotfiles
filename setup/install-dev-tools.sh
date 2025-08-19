@@ -1,10 +1,19 @@
-echo Removing gh installed by apt
-sudo apt remove gh
+if [ "$(uname)" == "Darwin" ]; then
+  echo 'Running brew install (mac only)'
+  brew install \
+    tmux \
+    stow \
+    wget \
+    gh
+else
+  echo 'Removing gh installed by apt'
+  sudo apt remove gh
+fi
 
-echo Installing tmux Plugin manager
+echo 'Installing tmux Plugin manager'
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-echo Running brew install
+echo 'Running brew install'
 brew install \
   btop \
   fd \

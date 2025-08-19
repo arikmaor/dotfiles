@@ -1,11 +1,10 @@
-# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
-export PATH="/home/linuxbrew/.linuxbrew/opt/node@20/bin:$PATH"
+# export DOTNET_ROOT=$HOME/.dotnet
+# export PATH="$HOME/.local/bin:/home/linuxbrew/.linuxbrew/opt/node@20/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 export EDITOR=nvim
 export KUBE_EDITOR=nvim
-
-alias pbcopy='xclip -selection clipboard'
-alias pbpaste='xclip -selection clipboard -o'
 
 alias vim=nvim
 alias v='vim .'
