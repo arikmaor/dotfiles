@@ -1,7 +1,7 @@
 # MacOS Installation
 
 1. Install homebrew: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`.
-1. Install stuff with homebrew: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/arikmaor/dotfiles/refs/heads/master/setup/mac-homebrew.sh)"`.
+1. Install stuff with homebrew: `/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/arikmaor/dotfiles/refs/heads/master/setup/mac-homebrew.sh)"`.
 1. Restart (at this point _Alacritty_ and _Brave_ are installed)
 1. Open _Brave Browser_ and start syncing
 1. Login to github and create ssh key: `gh auth login`
