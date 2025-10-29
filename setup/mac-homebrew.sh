@@ -1,6 +1,7 @@
 brew install --cask \
   karabiner-elements \
   alacritty \
+  font-meslo-lg-nerd-font \
   spotify \
   whatsapp \
   brave-browser \
