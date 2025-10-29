@@ -1,0 +1,18 @@
+#!/usr/bin/env zsh
+
+eval $(
+  kubectl get "$(kubectl get cm -oname | grep e2e-test-config)" -ojson | \
+  jq -r '
+    .data |
+    pick(
+        .CODELESS_PUBLIC_URL,
+        .API_KEY,
+        .API_KEY_READ_ONLY,
+        .API_KEY_ORG_ADMIN,
+        .API_KEY_OTHER_ORG,
+        .API_KEY_OTHER_TEA
+        ) |
+    to_entries | .[] |
+    "export \(.key)=\"\(.value)\";"
+  '
+)

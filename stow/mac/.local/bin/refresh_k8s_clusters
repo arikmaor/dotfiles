@@ -1,0 +1,12 @@
+#!/usr/bin/env zsh
+
+for sub in $(az account list | jq -r '.[].id'); do
+  echo $sub
+  for group in $(az group list --subscription $sub | jq -r '.[].name | select(startswith("eyes-cluster-") or endswith("-rg"))'); do
+    echo "   $group"
+    for name in $(az aks list --subscription $sub --resource-group $group | jq -r '.[].name'); do
+      echo "       $name"
+      az aks get-credentials --subscription $sub --resource-group $group --name $name
+    done
+  done
+done
