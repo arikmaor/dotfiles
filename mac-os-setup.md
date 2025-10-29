@@ -8,6 +8,7 @@
 1. Clone this repo: `git clone git@github.com:arikmaor/dotfiles.git ~/dotfiles`.
 1. Run `stow base mac` in `~/dotfiles`
 1. Restart _Alacritty_
+1. Open Karabiner to allow keyboard customizations.
 1. Configure system settings: `~/dotfiles/setup/mac-settings.sh`.
 1. Install tmux plugin manager: `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 1. Start tmux and install plugins (`prefix + I`)

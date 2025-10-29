@@ -1,8 +1,8 @@
 # Disable natural scroll
-defaults write 'Apple Global Domain' com.apple.swipescrolldirection -bool false
+defaults write 'Apple Global Domain' com.apple.swipescrolldirection -int 1
 
 # Set fastest tracking speed
-defaults write 'Apple Global Domain' com.apple.trackpad.scaling -float 3
+defaults write 'Apple Global Domain' com.apple.trackpad.scaling -string 3
 
 # Set fastest key repeat
 defaults write 'Apple Global Domain' InitialKeyRepeat -int 15
@@ -22,16 +22,8 @@ defaults write com.apple.dock tilesize -int 38
 defaults write com.apple.dock magnification -bool true
 defaults write com.apple.dock largesize -int 104
 
-# Show bluetooth menu
-defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.bluetooth" -bool true
-defaults write com.apple.systemuiserver menuExtras -array-add "/System/Library/CoreServices/Menu Extras/Bluetooth.menu"
-
 # Show battery precentage
 defaults write com.apple.menuextra.battery ShowPercent -bool true
-
-# Show volume in menubar
-defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.volume" -bool true
-defaults write com.apple.systemuiserver menuExtras -array-add "/System/Library/CoreServices/Menu Extras/Volume.menu"f
 
 # Restart ui
 for app in \
