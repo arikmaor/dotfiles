@@ -9,5 +9,6 @@
 1. Run `stow base mac` in `~/dotfiles`
 1. Restart _Alacritty_
 1. Configure system settings: `~/dotfiles/setup/mac-settings.sh`.
+1. Install Nodejs using script from [here](https://nodejs.org/en/download) according to your needs
 1. Start tmux and install plugins (`prefix + I`)
 1. Open neovim and let the plugin manager install everything
