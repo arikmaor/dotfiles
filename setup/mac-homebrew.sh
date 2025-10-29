@@ -23,6 +23,7 @@ brew install \
   btop \
   fd \
   ffmpeg \
+  fnm \
   fzf \
   gcc \
   gh \
