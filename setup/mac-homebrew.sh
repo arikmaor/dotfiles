@@ -43,7 +43,6 @@ brew install \
   ripgrep \
   stern \
   stow \
-  tcld \
   temporal \
   tesseract \
   tfenv \
