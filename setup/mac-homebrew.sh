@@ -1,5 +1,3 @@
-echo Installing apps with brew cask
-
 brew install --cask \
   karabiner-elements \
   alacritty \
