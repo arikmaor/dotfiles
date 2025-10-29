@@ -4,7 +4,7 @@ compinit
 
 source ~/.local/share/antigen.zsh
 
-export DEFAULT_USER=arikmaor # for agnoster theme
+export DEFAULT_USER=arik # for agnoster theme
 antigen use oh-my-zsh
 antigen theme agnoster
 
@@ -26,10 +26,10 @@ RPROMPT=$'%{$fg[white]%}$(tf_prompt_info)%{$reset_color%}'
 
 export CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox
 
-# export DOTNET_ROOT=$HOME/.dotnet
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:/opt/homebrew/opt/node@20/bin":$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools:"$HOME/JetBrains Rider-2024.3.6/bin"
+export DOTNET_ROOT=$HOME/.dotnet
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools"
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
-fpath=(/Users/arikmaor/.docker/completions $fpath)
+fpath=(/Users/arik/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
