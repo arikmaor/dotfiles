@@ -1,5 +1,5 @@
 # Disable natural scroll
-defaults write 'Apple Global Domain' com.apple.swipescrolldirection -int 1
+defaults write 'Apple Global Domain' com.apple.swipescrolldirection -int 0
 
 # Set fastest tracking speed
 defaults write 'Apple Global Domain' com.apple.trackpad.scaling -string 3
