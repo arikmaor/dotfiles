@@ -1,4 +1,13 @@
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# Static equivalent of `eval "$(brew shellenv)"`. Inlined deliberately: brew
+# shellenv forks twice (itself, plus a nested path_helper eval) and .zshenv is
+# sourced by *every* zsh, including non-interactive scripts. Re-run
+# `brew shellenv` and update these if the homebrew prefix ever moves.
+export HOMEBREW_PREFIX="/opt/homebrew"
+export HOMEBREW_CELLAR="/opt/homebrew/Cellar"
+export HOMEBREW_REPOSITORY="/opt/homebrew"
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
+export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}"
+fpath=(/opt/homebrew/share/zsh/site-functions $fpath)
 
 # export DOTNET_ROOT=$HOME/.dotnet
 # export PATH="$HOME/.local/bin:/home/linuxbrew/.linuxbrew/opt/node@20/bin:$PATH"

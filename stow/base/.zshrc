@@ -20,5 +20,3 @@ antigen apply
 if command -v fzf > /dev/null; then
   source <(fzf --zsh)
 fi
-
-RPROMPT=$'%{$fg[white]%}$(tf_prompt_info)%{$reset_color%}'

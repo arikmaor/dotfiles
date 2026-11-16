@@ -45,3 +45,8 @@ program = "/bin/zsh"
 option_as_alt = "Both"
 
 [terminal]
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001B\r"

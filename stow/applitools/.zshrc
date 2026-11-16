@@ -22,8 +22,6 @@ if command -v fzf > /dev/null; then
   source <(fzf --zsh)
 fi
 
-RPROMPT=$'%{$fg[white]%}$(tf_prompt_info)%{$reset_color%}'
-
 export CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox
 
 export DOTNET_ROOT=$HOME/.dotnet

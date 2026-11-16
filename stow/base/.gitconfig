@@ -24,3 +24,6 @@
 	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
 [include]
 	path = ~/.gitconfig.local
+[maintenance]
+	repo = /Users/arik/devel/applitools/src
+	repo = /Users/arik/projects/website
